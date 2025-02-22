@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  max-width: 100%;
+  height: 160vh;
+  background-color: grey;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  width: 100%;
+  height: 100px;
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.atividades h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.contas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+
+}
+
+.divisao:hover,
+.multiplicacao:hover,
+.porcentagem:hover,
+.subtracao:hover,
+.adicao:hover,
+.raiz-quadrada:hover,
+.potencia:hover,
+.Aleatório:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.divisao,
+.multiplicacao,
+.porcentagem,
+.subtracao,
+.adicao,
+.raiz-quadrada,
+.potencia,
+.Aleatório {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.divisao {
+  background-color: blue;
+}
+
+.multiplicacao {
+  background-color: green;
+}
+
+.porcentagem {
+  background-color: aqua;
+
+}
+
+.subtracao {
+  background-color: red;
+}
+
+.adicao {
+  background-color: purple;
+}
+
+.raiz-quadrada {
+  background-color: orange;
+}
+
+.potencia {
+  background-color: burlywood;
+}
+
+.divisao,
+.multiplicacao,
+.porcentagem,
+.subtracao,
+.adicao,
+.raiz-quadrada,
+.potencia,
+.Aleatório {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 10px 5px black;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.multiplicacao {
+  background-color: green;
+}
+
+.Aleatório {
+  background-color: yellowgreen;
+}
+
+h1 {
+  pointer-events: none;
+}
