@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
   <title>Matemática quizze</title>
 </head>
 
@@ -22,6 +23,9 @@
     <a href="RedesSociais.html" class="redes">
       <h1>REDES DOS DEVS</h1>
     </a>
+    
+   
+  <div class="suport" onclick="Abrir()"></div>
   
   </div>
   <br> <br><br><br><br><br>
@@ -69,14 +73,47 @@
 
 
 
+  <div class="suporte-overlay" id="suporte-form">
+    <div id="fechar"></div>
+    <div class="suporte-container">
+        <h1>Suporte</h1>
+        <form action="https://api.sheetmonkey.io/form/t87yqrBoVUjwM9dUNzLZRv" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
 
 
+            <label for="tipo-suporte">Tipo de Suporte:</label>
+            <select id="tipo-suporte" name="tipo-suporte">
+                <option value="tecnico">Técnico</option>
+                <option value="financeiro">Login</option>
+                <option value="administrativo">Bug</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="descricao">Descrição do Problema:</label>
+            <textarea id="descricao" name="descricao" rows="4" ></textarea>
+
+            <label for="metodo-contato">Método Preferido de Contato:</label>
+            <select id="metodo-contato" name="metodo-contato">
+                <option value="email">Email</option>
+                <option value="telefone">Telefone</option>
+                <option value="whatsapp">WhatsApp</option>
+            </select>
+
+           
+            <button type="submit" class="suporte-btn">Enviar</button>
+        </form>
+    </div>
+</div>
 
 
-
-
-  
-
+<script src="suport.js"></script>
 </body>
 
 </html>
